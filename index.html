@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+NSW+ACT+Foundation:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./js/main.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/e3d83117d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>포트폴리오</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <a href="#" class="navLogo">jin young</a>
+      <div id="navToggle"></div>
+      <ul id="navMenu">
+        <li class="navMenuItem">
+          <a class="navMenuItemLink" href="#home">Home</a>
+        </li>
+        <li class="navMenuItem">
+          <a class="navMenuItemLink" href="#timeline">Timeline</a>
+        </li>
+        <li class="navMenuItem">
+          <a class="navMenuItemLink" href="#skills">Skills</a>
+        </li>
+        <li class="navMenuItem">
+          <a class="navMenuItemLink" href="#project">Project</a>
+        </li>
+        <li class="navMenuItem">
+          <a class="navMenuItemLink" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <section id="home" class="home">
+      <div class="homeContainer">
+        <h1 class="homeTitle">안녕하세요, <span></span></h1>
+        <h1 class="homeSubtitle">신입 프론트엔드 개발자 <span></span></h1>
+        <h1 class="homeDescription">이진영입니다. <span></span></h1>
+        <a href="#timeline" type="button" class="cta"
+          >더 알아보기 <span></span>
+        </a>
+      </div>
+    </section>
+    <section id="timeline" class="timeline">
+      <div class="timeLineHeading">time line</div>
+      <div class="timelineContainer">
+        <div class="timelineWrap">
+          <ul class="timelineLists">
+            <li class="timelineListOdd">
+              <h3 class="timelineTitle">영진전문대 입학</h3>
+              <p>전자 정보통신학과</p>
+              <span class="timelineCircle"></span>
+              <span class="timelineDate">2013.03</span>
+            </li>
+            <li class="timelineListEven">
+              <h3 class="timelineTitle">군 입대</h3>
+              <p>육군병장 만기전역</p>
+              <span class="timelineCircle"></span>
+              <span class="timelineDate">2013.10 ~ 2015.07</span>
+            </li>
+            <li class="timelineListOdd">
+              <h3 class="timelineTitle">영진전문대 졸업</h3>
+              <span class="timelineCircle"></span>
+              <span class="timelineDate">2018.02</span>
+            </li>
+            <li class="timelineListEven">
+              <h3 class="timelineTitle">리쿠르트 R&D 스태핑</h3>
+              <p>일본 IT 기업 리쿠르트 R&D 스태핑 정사원 (기술직 파견사원)</p>
+              <span class="timelineCircle"></span>
+              <span class="timelineDate">2018.03 ~ 2020.09</span>
+            </li>
+            <li class="timelineListOdd">
+              <h3 class="timelineTitle">프론트엔드 개발 공부</h3>
+              <span class="timelineCircle"></span>
+              <span class="timelineDate">2022.04 ~ </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills">
+      <p class="skillsHeading">skills</p>
+      <div class="skillsContainer">
+        <div class="skillsCard">
+          <div id="skillsCard-1"></div>
+          <p>html</p>
+        </div>
+        <div class="skillsCard">
+          <div id="skillsCard-2"></div>
+          <p>css</p>
+        </div>
+        <div class="skillsCard">
+          <div id="skillsCard-3"></div>
+          <p>javascript</p>
+        </div>
+        <div class="skillsCard">
+          <div id="skillsCard-4"></div>
+          <p>jquery</p>
+        </div>
+        <div class="skillsCard">
+          <div id="skillsCard-5"></div>
+          <p>react</p>
+        </div>
+        <div class="skillsCard">
+          <div id="skillsCard-6"></div>
+          <p>git & github</p>
+        </div>
+      </div>
+    </section>
+    <section id="project" class="project">
+      <p class="projectHeading">project</p>
+      <div class="projectSlideContainer swiper">
+        <div class="projectSlideContent">
+          <div class="projectCardWrapper swiper-wrapper">
+            <div class="projectCard swiper-slide">
+              <div class="projectImageContent">
+                <div class="projectCardImage">
+                  <img
+                    src="./imgs/일어 암기.jpg"
+                    alt=""
+                    class="projectCardImg"
+                  />
+                </div>
+              </div>
+              <div class="projectCardContent">
+                <h2 class="projectName">일어 암기 사이트</h2>
+                <p class="projectDescription">
+                  리액트를 배우면서 제작한 사이트입니다.
+                </p>
+                <div class="projectButton">
+                  <a
+                    href="https://github.com/LEEJINYOUN/jpt_words.git"
+                    class="projectBtn"
+                    >github</a
+                  >
+                  <a
+                    href="https://leejinyoun.github.io/jpt_words/"
+                    class="projectBtn"
+                    >home page</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="projectCard swiper-slide">
+              <div class="projectImageContent">
+                <span class="projectOverlay"></span>
+                <div class="projectCardImage">
+                  <img
+                    src="./imgs/포트폴리오.jpg"
+                    alt=""
+                    class="projectCardImg"
+                  />
+                </div>
+              </div>
+              <div class="projectCardContent">
+                <h2 class="projectName">포트 폴리오</h2>
+                <p class="projectDescription">
+                  포트폴리오 용도로 제작한 페이지입니다.
+                </p>
+                <div class="projectButton">
+                  <a
+                    href="https://github.com/LEEJINYOUN/portfolio-Part2.git"
+                    class="projectBtn"
+                    >github</a
+                  >
+                  <a
+                    href="https://leejinyoun.github.io/LEEJINYOUN.github.io.Portfolio/"
+                    class="projectBtn"
+                    >home page</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="projectCard swiper-slide">
+              <div class="projectImageContent">
+                <span class="projectOverlay"></span>
+                <div class="projectCardImage">
+                  <img
+                    src="./imgs/뮤직 플레이어.jpg"
+                    alt=""
+                    class="projectCardImg"
+                  />
+                </div>
+              </div>
+              <div class="projectCardContent">
+                <h2 class="projectName">뮤직 플레이어</h2>
+                <p class="projectDescription">
+                  자바스크립트를 배우면서 제작한 페이지입니다.
+                </p>
+                <div class="projectButton">
+                  <a
+                    href="https://github.com/LEEJINYOUN/LEEJINYOUN.github.io.MusicPlayer.git"
+                    class="projectBtn"
+                    >github</a
+                  >
+                  <a
+                    href="https://leejinyoun.github.io/LEEJINYOUN.github.io.MusicPlayer/"
+                    class="projectBtn"
+                    >home page</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="projectCard swiper-slide">
+              <div class="projectImageContent">
+                <span class="projectOverlay"></span>
+                <div class="projectCardImage">
+                  <img src="./imgs/유튜브.jpg" alt="" class="projectCardImg" />
+                </div>
+              </div>
+              <div class="projectCardContent">
+                <h2 class="projectName">유튜브</h2>
+                <p class="projectDescription">
+                  자바스크립트를 배우면서 제작한 사이트입니다.
+                </p>
+                <div class="projectButton">
+                  <a
+                    href="https://github.com/LEEJINYOUN/LEEJINYOUN.github.io.YoutubeSite.git"
+                    class="projectBtn"
+                    >github</a
+                  >
+                  <a
+                    href="https://leejinyoun.github.io/LEEJINYOUN.github.io.YoutubeSite/"
+                    class="projectBtn"
+                    >home page</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next projectSwiperNavBtn"></div>
+          <div class="swiper-button-prev projectSwiperNavBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="contactWaves">
+        <div class="contactWave" id="wave1"></div>
+        <div class="contactWave" id="wave2"></div>
+        <div class="contactWave" id="wave3"></div>
+        <div class="contactWave" id="wave4"></div>
+      </div>
+      <ul class="contactSocialIcon">
+        <li>
+          <a href="https://github.com/LEEJINYOUN"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+      <ul class="contactMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p>@ 2022. Lee Jin Young. All Rights Reserved</p>
+    </section>
+    <button class="arrowUp">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/js-fluid-meter.js"></script>
+  </body>
+  <script src="./js/swiper-bundle.min.js"></script>
+</html>
