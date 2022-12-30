@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -133,7 +137,6 @@ body {
 
 #home,
 #timeline,
-#skills,
 #contact {
   position: relative;
   display: flex;
@@ -395,35 +398,214 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.skillsHeading {
-  margin: 110px 0 50px 0;
-}
-
-.skillsContainer {
-  width: 100%;
-  padding: 0 13%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
-}
-
-.skillsCard {
-  padding: 40px 0;
+#skills {
+  background: #222;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  box-shadow: 7px 13px 25px rgba(0, 0, 0, 0.068);
-  border-radius: 6px;
+  min-height: 100vh;
 }
 
-.skillsCard p {
-  font-size: 21px;
-  color: #b969a8a1;
-  margin-top: 20px;
-  font-weight: 600;
+.skillsHeading {
+  margin: 110px 0 30px 0;
+  color: white;
+}
+
+.skillsWrapper {
+  line-height: 1.5;
+  max-width: 70%;
+  margin: 0 auto 20px auto;
+}
+
+.skillsBox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.skillsBox .skillContent,
+.skillsBox label {
+  order: initial;
+}
+
+.skillsBox label {
+  background: #ec6633;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: block;
+  padding: 16px 127px;
+  cursor: pointer;
+  font-size: 20px;
+  order: 99;
+}
+
+.skillsBox .skillContent {
+  display: none;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.5);
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+}
+
+.skillContent h3 {
   text-transform: uppercase;
 }
+
+.skillContent li {
+  margin-bottom: 5%;
+}
+
+.bar {
+  background-color: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(
+    135deg,
+    rgba(114, 223, 150, 0.911) 0%,
+    rgb(64, 116, 22) 100%
+  );
+}
+
+.html {
+  width: 55%;
+  animation: html 3s;
+}
+
+.css {
+  width: 55%;
+  animation: css 3s;
+}
+
+.javascript {
+  width: 50%;
+  animation: javascript 3s;
+}
+
+.bootstrap {
+  width: 30%;
+  animation: bootstrap 3s;
+}
+
+.react {
+  width: 40%;
+  animation: react 3s;
+}
+
+.git {
+  width: 40%;
+  animation: git 3s;
+}
+
+.github {
+  width: 40%;
+  animation: github 3s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes github {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+.skillsBox input[type="radio"] {
+  display: none;
+}
+
+.skillsBox input[type="radio"]:checked + label {
+  background: #fff;
+}
+
+.skillsBox input[type="radio"]:checked + label + .skillContent {
+  display: block;
+}
+
+/* @media (max-width: 600px) {
+  .box .content,
+  .box label {
+    order: initial;
+  }
+
+  .box label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 4px;
+  }
+} */
 
 .project {
   min-height: 100vh;
@@ -731,8 +913,12 @@ body {
     width: 90%;
   }
 
-  .skillsContainer {
-    grid-template-columns: repeat(2, 1fr);
+  .skillsBox label {
+    font-size: 22px;
+  }
+
+  .skillContent h3 {
+    font-size: 15px;
   }
 
   .projectHeading {
@@ -840,8 +1026,8 @@ body {
     transform: translateX(0);
   }
 
-  .skillsContainer {
-    grid-template-columns: repeat(1, 1fr);
+  .skillsBox label {
+    font-size: 15px;
   }
 
   .projectHeading {
