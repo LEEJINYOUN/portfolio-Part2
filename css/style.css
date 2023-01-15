@@ -499,6 +499,11 @@ body {
   animation: javascript 3s;
 }
 
+.php {
+  width: 20%;
+  animation: php 3s;
+}
+
 .jquery {
   width: 30%;
   animation: jquery 3s;
@@ -548,6 +553,15 @@ body {
   }
   100% {
     width: 50%;
+  }
+}
+
+@keyframes php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
   }
 }
 
