@@ -646,53 +646,91 @@ body {
 }
 
 .projectCard {
+  display: flex;
+  flex-direction: row;
   background-color: #fff;
   height: 500px;
   border-radius: 30px;
 }
 
+.projectImageContent {
+  width: 45%;
+  height: 100%;
+  border-radius: 30px 0 0 30px;
+}
+
 .projectCardImage {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 300px;
-  border-bottom: 1px solid lightgrey;
+  height: 100%;
+  border-radius: 30px 0 0 30px;
+}
+
+.projectCardImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 0 0 30px;
 }
 
 .projectCardContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 14px;
-  height: 200px;
-}
-
-.projectCardImage .projectCardImg {
-  width: 100%;
+  width: 55%;
   height: 100%;
-  border-radius: 30px 30px 0 0;
 }
 
-.projectName {
-  font-size: 18px;
-  font-weight: bolder;
-  color: #333;
+.projectCardTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 30%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.projectTitle {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(44, 40, 40);
+  margin-bottom: 10px;
+}
+
+.projectPeriod {
+  font-size: 15px;
+  color: rgb(145, 145, 145);
+}
+
+.projectCardMiddle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 40%;
 }
 
 .projectDescription {
-  font-size: 14px;
-  color: #707070;
-  text-align: center;
-  height: 20%;
+  font-size: 20px;
 }
 
-.projectButton {
+.projectDescription > span {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.projectBottom {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 50%;
   text-transform: uppercase;
+  width: 100%;
+  height: 30%;
+  border-top: 1px solid lightgrey;
 }
 
 .projectBtn {
@@ -939,6 +977,18 @@ body {
   .projectHeading {
     margin-top: 100px;
   }
+
+  .projectTitle {
+    font-size: 25px;
+  }
+
+  .projectPeriod {
+    font-size: 13px;
+  }
+
+  .projectDescription {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1049,20 +1099,58 @@ body {
     margin-top: 80px;
   }
 
+  .projectSlideContainer {
+    padding: 20px 0;
+  }
+
   .projectSlideContent {
     margin: 0 10px;
   }
 
-  .projectSwiperNavBtn {
-    display: none;
+  .projectCard {
+    display: flex;
+    flex-direction: column;
   }
 
-  .projectName {
-    font-size: 22px;
+  .projectImageContent {
+    width: 100%;
+    height: 50%;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .projectCardImage {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .projectCardImg {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .projectCardContent {
+    width: 100%;
+    height: 50%;
+  }
+
+  .projectTitle {
+    font-size: 24px;
+  }
+
+  .projectPeriod {
+    font-size: 13px;
+    font-weight: bolder;
   }
 
   .projectDescription {
-    font-size: 18px;
+    font-size: 14px;
+  }
+
+  .projectBtn {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+
+  .projectSwiperNavBtn {
+    display: none;
   }
 
   .arrowUp {

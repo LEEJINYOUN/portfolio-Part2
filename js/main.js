@@ -46,7 +46,7 @@ function scrollIntoView(selector) {
 }
 
 const swiper = new Swiper(".projectSlideContent", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 25,
   loop: true,
   centerSlide: "true",
@@ -62,15 +62,15 @@ const swiper = new Swiper(".projectSlideContent", {
     prevEl: ".swiper-button-prev",
   },
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    769: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
+  // breakpoints: {
+  //   0: {
+  //     slidesPerView: 1,
+  //   },
+  //   769: {
+  //     slidesPerView: 2,
+  //   },
+  //   1024: {
+  //     slidesPerView: 3,
+  //   },
+  // },
 });
